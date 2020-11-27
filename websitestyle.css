@@ -1,0 +1,186 @@
+ /*--------------------desctop-----------------------*/
+
+ body {
+    background-image: url(wood.jpg);
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: scroll;
+}
+header {
+    display: none;
+}
+main {
+    background-color: #d8b241;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 50% 30% 1fr;
+    grid-template-rows: 1fr 40% 1fr;
+    grid-template-areas: 
+    "header pic join"
+    "appcontent pic join"
+    "info pic join";
+}
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.forfree {
+    display: none;
+}
+
+.info {
+    grid-area: info;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.pic {
+    grid-area: pic;
+}
+.join {
+    grid-area: join;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.appcontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-area: appcontent;
+    background-color: wheat;
+    padding: 5px;
+    width: 80%;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+}
+.app {
+    width: 99%;
+    align-self: center;
+    
+}
+aside {
+    background-image: url(websitepic.png);
+    width: 100%;
+    height: fit-content;
+}
+
+p {
+    margin: 0;
+}
+
+
+ /*------------------------ipad------------------------*/
+
+@media only screen and (min-width: 450px) and (max-width:734px) {
+    
+    header {
+        background-image: url(banneripad.jpg);
+        height: 300px;
+    }
+    body {
+        background-image: none;
+        background-color: #d8b241;
+        margin:0;
+        font-family: 'Poppins', sans-serif;
+        overflow-y: scroll;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    
+    .community, .vanlife2 {
+        display: none;
+    }
+   
+    .appcontent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: wheat;
+        width: 90%;
+        padding:10px;
+    }
+    .app {
+        width: 98%;
+    }
+    .info {
+        display: flex;
+        gap: 1%;
+        margin: 5%;
+    }
+    .buysell {
+        display: none;
+    }
+    hr.solid {
+        border-left: 520px solid black;
+    }
+}
+
+/*--------------------mobile------------------------*/
+
+@media only screen and (min-width: 280px) and (max-width:450px) {
+    body {
+        background-image: none;
+        background-color:  #d8b241;
+        margin:0;
+        font-family: 'Poppins', sans-serif;
+        overflow-y: scroll;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vanlife {
+        justify-self: center;
+    }
+header {
+    background-image: url(mobilebanner.jpg);
+    height: 200px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.appcontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: wheat;
+    width: 90%;
+    padding:10px;
+}
+.app {
+    width: 90%;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 5%;
+}
+ .footerscreen, .buysell, .share, .community, .forfree {
+     display: none;
+ }
+.join {
+    align-self: center;
+}
+hr.solid {
+    border-left: 320px solid black;
+}
+}
+
+
