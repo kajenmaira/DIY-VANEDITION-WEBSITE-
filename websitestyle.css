@@ -13,7 +13,7 @@ main {
     background-color: #d8b241;
     margin: 2%;
     display: grid;
-    grid-template-columns: 50% 30% 1fr;
+    grid-template-columns: 50% 35% 1fr;
     grid-template-rows: 1fr 40% 1fr;
     grid-template-areas: 
     "header pic join"
@@ -39,6 +39,7 @@ main {
 }
 .pic {
     grid-area: pic;
+    width: fit-content;
 }
 .join {
     grid-area: join;
@@ -77,6 +78,11 @@ aside {
 
 p {
     margin: 0;
+}
+
+.websitepic {
+    max-width: 400px;
+    height: 100%;
 }
 
 
